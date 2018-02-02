@@ -546,12 +546,58 @@ body {
     width: 100%;
     height: 0.95rem;
     background: #28282b;
+    position: relative;
+}
+.newNav_list{
+    position: absolute;
+    top: -100%;
+    background: #fff;
+    width: 100%;
+    padding-bottom:0.2rem;
+    display: none;
+}
+.newNav_list p{
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.30rem;
+    font-weight: bold;
+    background: #f5f5f5;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+.newNav_list ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.23rem;
+}
+.newNav_list ul li a{
+    background:#f5f5f5;
+    padding: 0.05rem 0.1rem; 
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+.newNav_list ul li a.on{
+    background:#d7b576;
+    border: 1px solid #d7b576; 
+    color: #fff;
 }
 .new_logo img{
     margin-top:0.23rem;
     margin-left: 0.41rem;
     width: 4.34rem;
     height:0.53rem;
+}
+.new_logo span{
+    margin-top:0.32rem;
+    margin-right: 0.65rem;
+    width: 0.35rem;
+    height: 0.3rem;
+    background: url(../images/newList_bg.png) no-repeat center center;
+    background-size: 0.35rem 0.3rem;
 }
 .new_nav ul{
     display: flex;

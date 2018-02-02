@@ -17,6 +17,34 @@
 <body>
     <div class="new_logo">
         <img src="images/nwe_logo.png" alt="">
+        <span class="fr
+        new_move"></span>
+        <div class="newNav_list">
+            <p>查看更多类目</p>
+            <ul>
+                <li>
+                    <a href="" class="on">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="news_list">
         <p class="news_listTitle">
@@ -41,7 +69,6 @@
         </div>
         <p class="news_text">
             需求个性化、产品及服务定制化是未来保险业的趋势,互联网保险正在通过大数据分析、AI技术等科技手段促进定制化保险的发展。在刚刚过去的一年里,互联网保险领域的创业公司的融资动向有明显向toB端(对企业开展业务)企业倾斜的意味。曲速资本联合互联网保观出品的《2017年中国互联网保险行业研究报告》(以下简称《报告》)显示,截至2017年末,toB端的互联网保险公司共有8起融资,总计约2.5亿元,保准牛和益盛鑫科技两家互联网保险公司去年融资额均上亿元。此外,保险盒子、保险街等多个toB端互联网保险公司2017年融资额也达上千万元级别,而前两年动辄融资1亿元的toC端(对个人开展业务)互联网保险公司在2017年则几乎没有融资事件产生。
-　　
         </p>
         <p class="news_text">
             为何toB端和toC端的互联网保险公司会有“冰火两重天”的局面?
@@ -49,10 +76,13 @@
     </div>
 </body>
 <script>
-    // 新闻列表
-    $(".new_nav li").click(function () {
-        $(this).find("p").addClass("on");
-        $(this).siblings().find("p").removeClass("on");
+    $(".new_move").click(function () {
+        $(".newNav_list").animate({ top: "0.95rem" }, 1500)
+        $(".newNav_list").css({ display: "block" });
+    })
+    $(".newNav_list").click(function () {
+        $(".newNav_list").animate({ top: "-100%" })
+        $(".newNav_list").css({ display: "none" });
     })
 </script>
 

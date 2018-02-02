@@ -17,6 +17,34 @@
 <body>
     <div class="new_logo">
         <img src="images/nwe_logo.png" alt="">
+        <span class="fr
+         new_move"></span>
+        <div class="newNav_list">
+            <p>查看更多类目</p>
+            <ul>
+                <li>
+                    <a href="" class="on">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+                <li>
+                    <a href="">行业新闻</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="new_nav">
         <ul>
@@ -128,6 +156,14 @@
     $(".new_nav li").click(function () {
         $(this).find("p").addClass("on");
         $(this).siblings().find("p").removeClass("on");
+    })
+    $(".new_move").click(function(){
+        $(".newNav_list").animate({top:"0.95rem"},1500)
+        $(".newNav_list").css({display:"block"}); 
+    })
+    $(".newNav_list").click(function(){
+        $(".newNav_list").animate({top:"-100%"})
+        $(".newNav_list").css({display:"none"}); 
     })
 </script>
 
